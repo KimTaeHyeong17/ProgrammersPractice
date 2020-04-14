@@ -1,3 +1,5 @@
+https://programmers.co.kr/learn/courses/30/lessons/42862?language=java
+
 import java.util.*;
 class Solution {
     int[] losts;
