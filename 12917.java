@@ -8,8 +8,15 @@ class Solution {
       char[] charArray = s.toCharArray();
       Arrays.sort(charArray);
       System.out.println(charArray);
-      Collections.reverse(Arrays.asList(charArray));
-      System.out.println(charArray);
+      List<Character> temp = new ArrayList();
+      for(char c : charArray){
+          temp.add(c);
+      }
+      Collections.reverse(temp);
+      for(char c : temp){
+          answer = answer+c;
+      }
+      System.out.println(answer);
       //왜 char array는 reverse가 안되지안되지
       
       String[] stringArray = s.split("");
